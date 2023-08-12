@@ -1,0 +1,271 @@
+/* Import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Material symbols */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1rem = 10px */
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+    color: #fff;
+
+    scroll-behavior: smooth;
+}
+
+/* ---------------- */
+/* UTILITY CLASSES */
+/* -------------- */
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container, body {
+    overflow-x: hidden;
+}
+
+/* --------------------- */
+/* FIRST SECTION STYLES */
+/* ------------------- */
+.sec-01 {
+    padding: 2rem;
+    background-color: #2a2f26;
+}
+
+/* -------------- */
+/* HEADER STYLES */
+/* ------------ */
+header {
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 1.4;
+}
+
+.menu-icon {
+    font-size: 3.5rem;
+}
+
+.portfolio-page {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+
+    padding: 0.3rem 2.5rem;
+    margin-top: 4rem;
+    width: max-content;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2.5rem;
+}
+
+.first-paragraph {
+    font-size: 2.4rem;
+
+    margin-top: 3rem;
+}
+
+.hero-div {
+    margin-top: 3rem;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.hero-description {
+    font-size: 1.7rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 3rem;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 3rem 0;
+
+    background: #EEEEEE;
+}
+
+.sec-01-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.sec-01-container h2:first-child {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.sec-01-container h2:last-child {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.sec-02 {
+    padding: 2rem;
+    color: #000;
+}
+
+.about-product {
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 1.4;
+
+    width: max-content;
+    align-items: center;
+}
+
+.about-product span {
+    font-size: 5rem;
+    margin-top: -8px;
+}
+
+.sec-02 .divider {
+    background: #000;
+}
+
+.project-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #131313;
+}
+
+.project-description, .project-thumbnail {
+    margin-top: 3rem;
+}
+
+.project-description {
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+}
+
+.project-thumbnail img {
+    width: 100%;
+}
+
+.project-information {
+    margin-top: 3rem;
+}
+
+.information-container h2:first-child {
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.information-container h2:last-child {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.project-information .divider {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.order-button {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.order-button:last-of-type {
+    flex-direction: row-reverse;
+}
+
+.order-button .divider {
+    flex: 1;
+}
+
+.sec-03 {
+    background: #131313;
+
+    padding: 8rem 2rem 3rem 2rem;
+}
+
+.about-me {
+    font-size: 2.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+}
+
+.about-paragraph {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+.media-icon-container {
+    margin-top: 3rem;
+}
+
+.media-icon-container ul {
+    justify-content: center;
+    gap: 3rem;
+}
+
+.media-icon-container ul li {
+    list-style: none;
+}
+
+.media-icon-container ul li a {
+    font-size: 2.6rem;
+    color: #fff;
+}
+
+.rights-reserved {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    margin-top: 3rem;
+}
