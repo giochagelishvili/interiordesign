@@ -269,3 +269,121 @@ header {
     font-weight: 400;
     margin-top: 3rem;
 }
+
+.hero-img-tablet {
+    display: none;
+}
+
+.check-products {
+    display: none;
+}
+
+.nav-menu {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-img-tablet {
+        display: block;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .sec-01 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding: 5rem;
+    }
+
+    header {
+        align-items: flex-start !important;
+    }
+
+    .check-products {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+
+        margin: 0 !important;
+
+        border-width: 1px;
+        border-color: #fff;
+    }
+
+    .check-products span {
+        font-size: 2.6rem;
+        margin-top: -0.7rem;
+    }
+
+    .nav-menu li {
+        list-style: none;
+    }
+
+    .nav-menu li a {
+        font-size: 1.7rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-menu li:first-child a {
+        text-decoration: underline;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .grid-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .hero-text-container {
+        width: 40%;
+    }
+
+    .hero-container {
+        width: 50%;
+    }
+
+    .hero-div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-description {
+        text-align: right;
+    }
+
+    .hero-img-tablet {
+        height: 45vh;
+        width: 70%;
+    }
+
+    .divider-container {
+        width: 100%;
+    }
+
+    .sec-01-container:last-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .sec-01-container:last-of-type h2 {
+        width: 60%;
+    }
+}
