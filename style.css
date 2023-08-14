@@ -70,6 +70,24 @@ header {
     width: 100%;
 }
 
+.nav-menu li {
+    margin-top: 0.5rem;
+}
+
+.nav-menu li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.nav-menu li:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
 .logo {
     font-size: 2.5rem;
     font-style: normal;
@@ -188,8 +206,27 @@ header {
     width: 100%;
 }
 
-.project-information {
-    margin-top: 3rem;
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+
+    margin: 4rem 0 8rem 0;
+}
+
+.arrow-left, .arrow-right {
+    border: 1px solid #2a2f26;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: 0.2s;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    background-color: #2a2f26;
+    color: #fff;
+    cursor: pointer;
 }
 
 .information-container h2:first-child {
@@ -218,9 +255,16 @@ header {
     justify-content: flex-start;
     gap: 1.5rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    transition: 0.2s ease-in-out;
+}
+
+.order-button .divider {
+    transition: 0.2s ease-in-out;
 }
 
 .order-button:last-of-type {
+    float: right;
     flex-direction: row-reverse;
 }
 
@@ -282,6 +326,10 @@ header {
     display: none;
 }
 
+.hero-img-desktop {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .hero-img-tablet {
         display: block;
@@ -314,6 +362,8 @@ header {
 
         border-width: 1px;
         border-color: #fff;
+
+        transition: 0.2s;
     }
 
     .check-products span {
@@ -329,10 +379,6 @@ header {
         font-size: 1.7rem;
         color: #fff;
         text-decoration: none;
-    }
-
-    .nav-menu li:first-child a {
-        text-decoration: underline;
     }
 
     .menu-icon {
@@ -385,5 +431,67 @@ header {
 
     .sec-01-container:last-of-type h2 {
         width: 60%;
+    }
+
+    .order-button {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-img-tablet {
+        display: none;
+    }
+
+    .hero-img-desktop {
+        height: 45vh;
+        display: block;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .hero-description {
+        width: 80%;
+    }
+
+    .portfolio-page {
+        font-size: 1.8rem;
+        padding: 0.5rem 3rem;
+    }
+
+    .check-products:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #2a2f26;
+    }
+
+    .first-paragraph {
+        margin-top: 5rem;
+    }
+
+    .project-thumbnail {
+        width: 60%;
+        margin: 3rem auto;
+    }
+
+    .information-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .information-container h2 {
+        margin: 0 !important;
+    }
+
+    .order-button:hover {
+        width: 40%;
+        cursor: pointer;
+        color: #9bd16e;
     }
 }
