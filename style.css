@@ -143,22 +143,10 @@ header {
     background: #EEEEEE;
 }
 
-.sec-01-container {
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 50%;
-}
-
-.sec-01-container h2:first-child {
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1.4;
-}
-
-.sec-01-container h2:last-child {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.6);
+.delve-into-portfolio {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .sec-02 {
@@ -166,17 +154,29 @@ header {
     color: #000;
 }
 
-.about-product {
+.swipe-down-container {
+    align-items: center;
+    gap: 3rem;
+}
+
+.swipe-down-container .divider {
+    flex: 1;
+}
+
+.swipe-down {
     font-size: 2.2rem;
     font-weight: 600;
     letter-spacing: -0.05em;
     line-height: 1.4;
+    color: #2a2f26;
+    text-decoration: none;
 
     width: max-content;
     align-items: center;
+    gap: 1rem;
 }
 
-.about-product span {
+.swipe-down span {
     font-size: 5rem;
     margin-top: -8px;
 }
@@ -387,7 +387,7 @@ header {
 
     .grid-container {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: space-between;
     }
 
