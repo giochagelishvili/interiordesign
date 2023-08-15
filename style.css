@@ -330,6 +330,10 @@ header {
     display: none;
 }
 
+.hero-2-container {
+    display: none !important;
+}
+
 @media screen and (min-width: 768px) {
     .hero-img-tablet {
         display: block;
@@ -387,7 +391,7 @@ header {
 
     .grid-container {
         display: flex;
-        align-items: flex-start;
+        align-items: flex-end;
         justify-content: space-between;
     }
 
@@ -409,13 +413,21 @@ header {
         display: none;
     }
 
+    .hero-2-container {
+        display: block !important;
+        margin-top: 3rem;
+    }
+    
+    .hero-two-desktop {
+        width: 100%;
+    }
+
     .hero-description {
-        text-align: right;
+        text-align: left;
     }
 
     .hero-img-tablet {
-        height: 45vh;
-        width: 70%;
+        width: 80%;
     }
 
     .divider-container {
@@ -444,8 +456,12 @@ header {
     }
 
     .hero-img-desktop {
-        height: 45vh;
+        width: 50%;
         display: block;
+    }
+    
+    .hero-two-desktop {
+        width: 90%;
     }
 
     .hero-container {
