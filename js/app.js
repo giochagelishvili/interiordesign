@@ -8,6 +8,7 @@ $(document).ready(function() {
     ScrollReveal().reveal('header', { origin: 'top' });
     ScrollReveal().reveal('.portfolio-page', { origin: 'left' });
     ScrollReveal().reveal('.first-paragraph, .hero-div, .hero-description', { origin: 'bottom' });
+    ScrollReveal().reveal('.hero-2-container', { origin: 'bottom' });
     ScrollReveal().reveal('.sec-01-container', { origin: 'left'});
     ScrollReveal().reveal('.project-title, .project-description', { origin: 'left'});
     ScrollReveal().reveal('.project-thumbnail', { origin: 'right'});
